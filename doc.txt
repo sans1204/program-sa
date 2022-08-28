@@ -1,0 +1,708 @@
+# program-sa
+python 
+#TOPIC : DIFFERENT OPERATION’S COLLECTION  DATA TYPES
+#List Operations:
+
+
+1.Concatinating using +
+
+
+ls1=[1,2,3] 
+ls2=[4,5,6]
+print(ls1+ls2)
+
+
+OUTPUT:
+[1, 2, 3, 4, 5, 6]
+2.Repeating using *
+
+
+ls1=['j','a','v','a']
+print(ls1*3)
+
+
+OUTPUT:
+['b', 'a', 'c', 'a', 'b', 'a', 'c', 'a', 'b', 'a', 'c', 'a']
+
+
+3.List Slicing
+
+
+ Extracting full list without using any index
+
+
+ls1=['a','b','c','d','e']
+print(ls1[:])
+
+
+OUTPUT:
+['a', 'b', 'c', 'd', 'e']
+
+
+Selecting some middle elements
+
+
+ls1=['p','y','t','h','o','n']
+print(ls1[2:5])
+
+
+OUTPUT:
+[1, 2, 3, 4]
+Using Negative Indexing
+
+
+ls1=[1,2,3,4,5,6]
+print(ls1[:-2])
+
+
+OUTPUT:
+[1, 2, 3, 4]
+
+
+List Modifying
+
+
+ls1=['a','b','c','d','e']
+ls1[1:3]=['p','q']
+print(ls1)
+
+
+OUTPUT:
+['a', 'p', 'q', 'd', 'e']
+
+
+append():
+
+
+ls1=['p','y','t','h','o','n']
+ls1.append('list')
+print(ls1)
+
+
+OUTPUT:
+['p', 'y', 't', 'h', 'o', 'n', 'list']
+
+
+#extend():
+
+
+ls1=[1,2,3,4]
+ls2=[5,6]
+ls2.extend(ls1)
+ls1.extend(ls2)
+print(ls1)
+print(ls2)
+
+
+OUTPUT:
+[1, 2, 3, 4, 5, 6, 1, 2, 3, 4]
+[5, 6, 1, 2, 3, 4]
+
+
+
+
+
+
+
+
+Sort
+
+
+ls1=[80,60,45,70,10]
+ls1.sort()
+print(ls1)
+
+
+OUTPUT:
+
+
+[10, 45, 60, 70, 80]
+Reverse:
+
+
+ls1=['p','a','c','a']
+ls1.reverse()
+print(ls1)
+OUTPUT:
+
+
+['a', 'c', 'a', 'p']
+
+
+Count()
+ls1=[1,2,4,6,2,8,9]
+ls1.count(2)
+
+
+OUTPUT:
+2
+Clear()
+
+
+ls=[1,2,3]
+ls.clear()
+print(ls)
+
+
+OUTPUT:
+[]
+Insert():
+
+
+ls=[1,2,3,4]
+ls.insert(1,"hi")
+print(ls)
+ 
+OUTPUT:
+[1, 'hi', 2, 3, 4]
+Index();
+
+
+ls=[1,2,3,4,5,6,7,8,9]
+ls.index(2)
+
+
+OUTPUT:
+1
+
+
+Deleting An Elements
+Using pop()
+
+
+ls=[1,2,3,-4]
+x=ls.pop()
+print(ls)
+print(x)
+
+
+OUTPUT:
+[2, 3, -4]
+1
+
+
+Remove(): 
+ls=[5,8,-9,-3]
+ls.remove(-9)
+print(ls)
+
+
+OUTPUT:
+
+
+[5, 8, -3]
+
+
+Del():
+ls=[1,2,6,7]
+del ls[2]
+print(ls)
+
+
+OUTPUT:
+[1, 2, 7]
+
+
+
+
+Deleting An All Odd Indexed Elements
+ls=[1,2,3,4,5,6,7,8,9]
+del ls[1::2]
+print(ls)
+ 
+OUTPUT:
+[1, 3, 5, 7, 9]
+
+
+Tuple Operations.:
+
+
+Different types of tuples
+
+
+Empty tuple:
+my_tuple = ()
+print(my_tuple)
+
+
+Tuple having integers:
+my_tuple = (1, 2, 3)
+print(my_tuple)
+
+
+Tuple with mixed datatypes: 
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)
+
+
+Nested tuple:
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+print(my_tuple)
+
+
+OUTPUT:
+()
+(1, 2, 3)
+(1, 'Hello', 3.4)
+('mouse', [8, 4, 6], (1, 2, 3))
+
+
+Accessing tuple elements using indexing
+my_tuple = ('p','e','r','m','i','t')
+
+
+print(my_tuple[0])    
+print(my_tuple[5])   
+print(my_tuple[6])
+my_tuple[2.0]
+
+
+nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+
+nested index
+print(n_tuple[0][3])      
+print(n_tuple[1][1])  
+    
+Negative indexing for accessing tuple elements
+
+
+my_tuple = ('p', 'e', 'r', 'm', 'i', 't')
+
+
+print(my_tuple[-1])
+
+
+print(my_tuple[-6])
+
+
+OUTPUT:
+p
+t
+s
+4
+t
+p
+Slicing
+Accessing tuple elements using slicing
+my_tuple = ('p','r','o','g','r','a','m','i','z')
+
+
+# elements 2nd to 4th
+
+
+print(my_tuple[1:4])
+
+
+# elements beginning to 2nd
+
+
+print(my_tuple[:-7])
+
+
+# elements 8th to end
+
+
+print(my_tuple[7:])
+
+
+
+
+# elements beginning to end
+
+
+print(my_tuple[:])
+
+
+OUTPUT:
+('r', 'o', 'g')
+('p', 'r')
+('i', 'z')
+('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
+
+# Changing tuple values
+my_tuple = (4, 2, 3, [6, 5])
+
+
+ TypeError: 'tuple' object does not support item assignment
+my_tuple[1] = 9
+
+
+However, item of mutable element can be changed
+my_tuple[3][0] = 9    # Output: (4, 2, 3, [9, 5])
+print(my_tuple)
+
+
+Tuples can be reassigned
+my_tuple = ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
+
+print(my_tuple)
+
+
+OUTPUT:
+
+
+(4, 2, 3, [9, 5])
+('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
+
+Concatenation
+print((1, 2, 3) + (4, 5, 6))
+
+
+Repeat
+print(("Repeat",) * 3)
+
+
+OUTPUT:
+(1, 2, 3, 4, 5, 6)
+('Repeat', 'Repeat', 'Repeat')
+
+
+
+
+
+
+Deleting tuples
+my_tuple = ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
+
+# can't delete items
+# TypeError: 'tuple' object doesn't support item deletion
+# del my_tuple[3]
+
+
+# Can delete an entire tuple
+del my_tuple
+
+
+# NameError: name 'my_tuple' is not defined
+print(my_tuple)
+
+
+
+
+OUTPUT:
+NameError     Traceback (most recent call last)
+<ipython-input-50-6d502a6648b0> in <module>
+     10 
+     11 # NameError: name 'my_tuple' is not defined
+---> 12 print(my_tuple)
+
+
+NameError: name 'my_tuple' is not defined
+
+
+
+
+ Membership test in tuple
+my_tuple = ('a', 'p', 'p', 'l', 'e',)
+
+
+# In operation
+print('a' in my_tuple)
+print('b' in my_tuple)
+
+
+# Not in operation
+print('g' not in my_tuple)
+
+
+
+
+OUTPUT:
+True
+False
+True
+
+
+
+
+
+
+# Using a for loop to iterate through a tuple
+for name in ('John', 'Kate'):
+    print("Hello", name)
+
+
+OUTPUT:
+Hello John
+Hello Kate
+Dictionary Operations.
+Creating Dictionary.
+
+
+# empty dictionary
+my_dict = {}
+
+
+# dictionary with integer keys
+my_dict = {1: 'apple', 2: 'ball'}
+
+
+# dictionary with mixed keys
+my_dict = {'name': 'John', 1: [2, 4, 3]}
+
+
+# using dict()
+my_dict = dict({1:'apple', 2:'ball'})
+
+
+# from sequence having each item as a pair
+my_dict = dict([(1,'apple'), (2,'ball')])
+
+
+# get vs [] for retrieving elements
+my_dict = {'name': 'Jack', 'age': 26}
+
+
+# Output: Jack
+print(my_dict['name'])
+
+
+# Output: 26
+print(my_dict.get('age'))
+
+
+# Trying to access keys which doesn't exist throws error
+# Output None
+print(my_dict.get('address'))
+
+
+# KeyError
+print(my_dict['address'])
+ 
+OUTPUT:
+Jack
+26
+None
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-9-2ec6dc01caba> in <module>
+     13 
+     14 # KeyError
+---> 15 print(my_dict['address'])
+
+
+KeyError: 'address'
+
+
+Changing and adding Dictionary Elements
+
+
+my_dict = {'name': 'Jack', 'age': 26}
+
+
+# update value
+my_dict['age'] = 27
+
+
+#Output: {'age': 27, 'name': 'Jack'}
+print(my_dict)
+
+
+# add item
+my_dict['address'] = 'Downtown'
+
+
+# Output: {'address': 'Downtown', 'age': 27, 'name': 'Jack'}
+print(my_dict)
+
+
+OUTPUT
+{'name': 'Jack', 'age': 27}
+{'name': 'Jack', 'age': 27, 'address': 'Downtown'}
+________________________________________
+
+
+# Removing elements from a dictionary
+# create a dictionary
+squares = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+# remove a particular item, returns its value
+print(squares.pop(4))
+
+
+print(squares)
+# remove an arbitrary item, return (key,value)
+print(squares.popitem())
+print(squares)
+# remove all items
+squares.clear()
+print(squares)
+# delete the dictionary itself
+del squares
+# Throws Error
+print(squares)
+
+
+OUTPUT:
+16
+{1: 1, 2: 4, 3: 9, 5: 25}
+(5, 25)
+{1: 1, 2: 4, 3: 9}
+{}
+
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-11-d119a0a5b684> in <module>
+     28 
+     29 # Throws Error
+---> 30 print(squares)
+
+
+NameError: name 'squares' is not defined
+
+
+#Set Operations.
+# Program to perform different set operations like in mathematics
+
+
+# define  sets
+E = {0, 2, 4, 6, 8};
+N = {1, 2, 3, 4, 5};
+
+
+# set union
+print("Union of E and N is",E | N)
+
+
+# set intersection
+print("Intersection of E and N is",E & N)
+
+
+# set difference
+print("Difference of E and N is",E - N)
+
+
+# set symmetric difference
+print("Symmetric difference of E and N is",E ^ N)
+
+
+OUTPUT:
+Union of E and N is {0, 1, 2, 3, 4, 5, 6, 8}
+Intersection of E and N is {2, 4}
+Difference of E and N is {0, 8, 6}
+Symmetric difference of E and N is {0, 1, 3, 5, 6, 8}
+
+
+
+#assignment_2
+
+In [5]:
+num_1 = int(input("enter the 1st number : "))
+num_2 = int(input("enter the 2nd number : "))
+operator = input("enter what you want to do with the 2 numbers : ")
+if(operator == '+') :
+  print("the sum of 2 numbers is : ",num_1 + num_2)
+elif(operator == '-') :
+  print("the subtraction of 2 numbers is : ",num_1 - num_2)
+elif(operator == '*'):
+  print("the multiplication of 2 numbers is :",num_1 * num_2)
+elif(operator == '/'):
+  print("the division of 2 numbers is : ",num_1 / num_2)
+else:
+  print("please give valid operator like + ,-,*,/")
+enter the 1st number : 10
+enter the 2nd number : 20
+enter what you want to do with the 2 numbers : *
+the multiplication of 2 numbers is : 200
+
+
+
+#assignment_3
+
+"r" is for only reading the file .where as "r+" is for reading and writing the file.
+In [8]:
+f = open("myfile.txt","r")
+print(f.read())
+f.close()
+voonna saikiran is a good boy
+he is 18 year old
+he loves to play cricket
+In [10]:
+f = open("myfile.txt","r+")
+print(f.write("his friends are dilli and revanth"))
+f.close()
+33
+now you can see that by using "r+".the data can change in the below code
+In [11]:
+f = open("myfile.txt","r")
+print(f.read())
+f.close()
+his friends are dilli and revanth is 18 year old
+he loves to play cricket
+"w" is for only open a file for writing only.where as "w+" is for Open a file for both writing and reading
+In [12]:
+f = open("myfile.txt","w+")
+print(f.write("we are friends for 7 years"))
+f.close()
+26
+In [13]:
+f = open("myfile.txt","w+")
+print(f.read())
+f.close()
+In [14]:
+f = open("myfile.txt","a")
+print(f.write(" and we will continue as life long"))
+f.close()
+34
+In [15]:
+f = open("myfile.txt","a+")
+print(f.read())
+f.close()
+
+
+#assignment 4
+In [16]:
+prime_numbers = [11, 3, 7, 5, 2]
+prime_numbers.sort()
+print(prime_numbers)
+[2, 3, 5, 7, 11]
+In [19]:
+prime_numbers = [11, 3, 7, 5, 2]
+prime_numbers.sort(reverse=True)
+print(prime_numbers)
+[11, 7, 5, 3, 2]
+
+assignment 5: 
+
+	#Example: Positional Arguement
+	def student(name,branch,marks):
+	  print("Student name:",name,"Branch:",branch,"Obtained Marks:", marks)
+	student("Anil","Computer Science",98)  
+	
+
+	#Output:
+	Student name: Anil Branch: Computer Science Obtained Marks: 98defin
+	
+
+	#Example:  
+	def Employee(name,id,Company):
+	print("Employee name:",name,"Employee id:",id,"currently working in:",Company)
+	Employee(Company="TCS",name="Arun",id="23456")  
+	Employee("Anil","202567",Company="IBM") 
+	ese parameters while calling function
+	
+
+	#Default arguments
+	Functions can have default arguments with a predefined value. This argument can be left out and the default value is then passed to the function, or the argument 
+	can be used with a different value.Note that default arguments must be defined as the last parameters in a function.nside parentheses while defining 
+	
+
+	#Example:
+	
+
+	def Student(marks,name="Abhi", Branch="Computer Science"):
+	  print("Student name is",name ,"I belongs from",Branch,"I obtained",marks,"marks")
+	Student(98)
+	Student(98,"akash","Information Technology") 
+	
+
+	#Output:
+	Student name is Abhi I belongs from Computer Science I obtained 98 marks
+	Student name is akash I belongs from Information Technology I obtained 98 markse passed for these parameters while calling function
+
